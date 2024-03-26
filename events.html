@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Listener</title>
+</head>
+<body>
+<!--Event bubbling and event capturing-->
+<!--Bubbling innermost element is handles first then the outer-->
+<!--Capturing outermost element is handled first then the inner-->
+
+<!--Default is false which is bubbling-->
+
+
+
+
+<script>
+    document.getElementById("myP").addEventListener("click", myFunction, true);  //capturing
+    document.getElementById("myDiv").addEventListener("click", myFunction, true);
+</script>
+</body>
+</html>
